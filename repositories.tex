@@ -1,0 +1,43 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+%\usepackage[francais]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{makeidx}
+\makeindex
+%\usepackage{url}
+%\usepackage{hyperref} % make them clickable instead of url
+\usepackage[pdftex,
+            pdfauthor={Jan Krause},
+            pdftitle={Data Repositories},
+            pdfsubject={Repositories for research data publication},
+            pdfkeywords={Data, Repository, Repositories, RDM, DMP, data lifecycle},
+            pdfproducer={Latex},
+            pdfcreator={pdflatex}]{hyperref}
+\usepackage[pdftex]{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage[backend=bibtex, sorting=nyt]{biblatex}
+\addbibresource[label=mainbib]{./bibliography/RDMtools.bib}
+%\usepackage{multirow}
+
+\begin{document}
+
+\input{./sections/000_titlepage.tex}
+\tableofcontents
+
+\newpage
+\section{Abstract}
+\input{./sections/100_introduction.tex}
+%\newpage
+\input{./sections/200_main_matter.tex}
+
+\newpage
+%\section{Index}
+\printindex
+
+\newpage
+\printbibliography[title={Bibliography}]
+
+\end{document}

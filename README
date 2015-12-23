@@ -1,0 +1,16 @@
+This repository contains the source LaTeX for the document:
+
+License : Crative Commons By Share Alike v4.0
+
+Author : Jan Krause / jan.krause@epfl.ch
+
+Date of first version: 23 december 2015 
+
+To compile it, run form terminal:
+pdflatex repositories.tex
+bibtex repositories.aux
+pdflatex repositories.tex
+pdflatex repositories.tex
+makeindex repositories
+pdflatex repositories.tex
+pdflatex repositories.tex
